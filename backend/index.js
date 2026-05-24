@@ -1,6 +1,7 @@
 import express from 'express';
 import banco from './Banco.js';
 import TipoLimpezaController from "./controllers/TipoLimpezaController.js";
+import AgendamentoController from "./controllers/AgendamentoController.js";
 
 import TipoLimpeza from './models/TipoLimpeza.js';
 import Agendamento from './models/Agendamento.js';
@@ -38,6 +39,13 @@ app.post("/tiplimpeza", TipoLimpezaController.inserir);
 app.put("/tiplimpeza/:id", TipoLimpezaController.alterar);
 app.delete("/tiplimpeza/:id", TipoLimpezaController.excluir);
 
+
+//rotas agendamento
+app.get("/agendamento", AgendamentoController.listar);
+app.get("/agendamento/:id", AgendamentoController.selecionar);
+app.post("/agendamento", AgendamentoController.inserir);
+app.put("/agendamento/:id", AgendamentoController.alterar);
+app.delete("/agendamento/:id", AgendamentoController.excluir);
 
 app.listen(4000, () => {
   console.log('Servidor rodando na porta 4000');
