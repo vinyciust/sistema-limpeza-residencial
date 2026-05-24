@@ -9,9 +9,9 @@ A regra de negócio calcula automaticamente:
 - Tempo total do serviço
 - Valor final do agendamento
 
-Cálculo:
-tempoTotal = dataFim - dataInicio
-valorFinal = tempoTotal * valorHora do tipo de limpeza
+#### Cálculo:
+#### tempoTotal = dataFim - dataInicio
+#### valorFinal = tempoTotal * valorHora do tipo de limpeza
 
 #### sistema rodando na porta 4000
 
