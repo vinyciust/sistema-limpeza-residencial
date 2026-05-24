@@ -25,6 +25,8 @@ const Agendamento = banco.define('Agendamento', {
   valorFinal: {
     type: DataTypes.FLOAT
   }
+}, {
+  tableName: 'agendamento'
 });
 
 TipoLimpeza.hasMany(Agendamento);

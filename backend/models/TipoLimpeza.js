@@ -10,6 +10,8 @@ const TipoLimpeza = banco.define('TipoLimpeza', {
     type: DataTypes.FLOAT,
     allowNull: false
   }
+}, {
+  tableName: 'tiplimpeza'
 });
 
 export default TipoLimpeza;
