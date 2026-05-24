@@ -62,4 +62,4 @@ Campos principais:
 
 As tabelas não precisam ser criadas manualmente no PostgreSQL.
 
-O projeto utiliza Sequelize, e as tabelas são criadas automaticamente ao iniciar o servidor, através do comando:
+O projeto utiliza Sequelize, e as tabelas são criadas automaticamente ao iniciar o servidor
